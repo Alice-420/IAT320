@@ -27,19 +27,19 @@ void loop() {
   long soundSol =  cs_2_7.capacitiveSensor(3000);
   
   if (soundDo > 500) {
-    tone(speaker,131);
+    tone(speaker,100);
   }
   if (soundRe > 500) {
-    tone(speaker,100);   
+    tone(speaker,200);   
   }
   if (soundMi > 500) {
-    tone(speaker,200);
-  }
-  if (soundFa > 500) {
     tone(speaker,300);
   }
-  if (soundSol > 500) {
+  if (soundFa > 500) {
     tone(speaker,400);
+  }
+  if (soundSol > 500) {
+    tone(speaker,500);
 
   
   if (soundDo<=500  &  soundRe<=500  &  soundMi<=500 & soundFa<=500  &  soundSol<=500){
